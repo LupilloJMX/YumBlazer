@@ -61,3 +61,19 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+###############################################################################
+# CONFIGURACIÓN PARA RECONOCIMIENTO DE BLAZOR (C#)
+###############################################################################
+# Forzar a GitHub a detectar los componentes de Blazor y páginas de servidor como C#
+*.razor linguist-language=C#
+*.cshtml linguist-language=C#
+
+# Ignorar la carpeta wwwroot (CSS, JS, iconos) y archivos HTML sueltos de las estadísticas
+wwwroot/** linguist-vendored
+*.html linguist-vendored
